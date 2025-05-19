@@ -46,13 +46,11 @@ def main():
 
     interface = gr.Interface(
         fn=_fn,
-        title="Resemble Enhance",
-        description="AI-driven audio enhancement for your audio files, powered by Resemble AI.",
         inputs=inputs,
         outputs=outputs,
     )
 
-    interface.launch()
+    interface.launch(share=True, show_api=False)
 
 
 if __name__ == "__main__":
